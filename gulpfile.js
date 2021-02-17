@@ -116,12 +116,11 @@ function deploy() {
   return src('dist/').pipe(
     rsync({
       root: 'dist/',
-      hostname: 'username@yousite.com',
-      destination: 'yousite/public_html/',
+      hostname: 'paavalip@paavalipoika.com',
+      destination: '/home/paavalip/public_html',
+      port: 21098,
       // clean: true, // Mirror copy with file deletion
-      include: [
-        /* '*.htaccess' */
-      ], // Included files to deploy,
+      include: ['*.htaccess'], // Included files to deploy,
       exclude: ['**/Thumbs.db', '**/*.DS_Store'],
       recursive: true,
       archive: true,
