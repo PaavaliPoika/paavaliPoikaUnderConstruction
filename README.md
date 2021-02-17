@@ -1,6 +1,6 @@
 # paavaliPoikaUnderConstruction
 
-## Paavali Poika Site
+## Paavali Poika WebSite
 
 https://github.com/PaavaliPoika
 

@@ -43,6 +43,7 @@ $gutter: $grid-gutter-width
 		font-weight: $fweight
         // font-display: swap; // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff2')
+		font-display: swap
 
 @include font('Montserrat Alternates', normal, 300, '../fonts/montserrat-alternates-latin_cyrillic-300.woff2')
 @include font('Montserrat Alternates', normal, 400, '../fonts/montserrat-alternates-latin_cyrillic-regular.woff2')
@@ -63,10 +64,17 @@ $gutter: $grid-gutter-width
 html
 	overflow-x: hidden
 
+.btn:focus
+	outline: none!important
+	box-shadow: none!important
+
 a
 	color: $lightblue
 	text-decoration: none
 	font-weight: bolder
+	span
+		font-weight: normal
+		font-size: 1.5rem
 
 a:hover
 	color: $llightblue
